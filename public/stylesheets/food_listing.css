@@ -1,0 +1,11 @@
+body {
+    background-color: #4aff4a;
+    font-family: 'Open Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
+}
+input {
+	width: 200px;
+    Height: 20px;
+    border-radius: 3px;
+    border: none;
+}
