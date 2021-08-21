@@ -4,7 +4,7 @@ function Add(){
     listingsNum += 1
 
     //Add listing after the one before
-    listings.innerHTML += '<div id="Listing ' + listingsNum + '" class="Listings"> <h3>Food Item ' + listingsNum + '</h3> <input type="text" name="food item" placeholder="Enter food item (eg. Apples)" required> <input type="number" name="quantity" placeholder="Enter amount" required> <input type="number" name="price" placeholder="Price $$ for each" required> <button type="button" onclick="Delete(' + listingsNum + ')">Delete</button> <br> </div>'
+    listings.innerHTML += '<div id="Listing ' + listingsNum + '" class="Listings"> <h3>Food Item ' + listingsNum + '</h3> <input type="text" name="food item ' + listingsNum + '" placeholder="Enter food item (eg. Apples)" required> <input type="number" name="quantity ' + listingsNum + '" placeholder="Enter amount" required> <input type="number" name="price ' + listingsNum + '" placeholder="Price $$ for each" required> <button type="button" onclick="Delete(' + listingsNum + ')">Delete</button> <br> </div>'
 }
 
 function Delete(n){
@@ -19,5 +19,9 @@ function Delete(n){
         listings[i].id = "Listing " + (i + 1)
         listings[i].getElementsByTagName("h3")[0].innerHTML = "Food Item " + (i + 1)
         listings[i].getElementsByTagName("Button")[0].setAttribute("onclick", "Delete(" + (i + 1) + ")")
+        
+        listings[i].getElementsByTagName("input")[0].setAttribute("name", "food item " + (i + 1))
+        listings[i].getElementsByTagName("input")[1].setAttribute("name", "quantity " + (i + 1))
+        listings[i].getElementsByTagName("input")[2].setAttribute("name", "price " + (i + 1))
     }
 }
