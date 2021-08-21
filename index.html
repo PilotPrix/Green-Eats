@@ -5,8 +5,155 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Green Eats</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header>
+    	<div class="container">
+    		<nav>
+    			<a href="#about" class="menu">About Us </a>
+    			<a href="#search" class="menu">Find Food </a>
+    			<a href="FoodListing.html" class="menu">Post a Lising </a>
+    			<a href="#maps" class="menu">Check Locations</a>
+    		</nav>
+    	</div>
+    </header>
+    <script src="javascripts.js"></script>
+    <section id="search">
+    	<div class="container">
+    		<h1 class="title">Welcome to GreenEats!</h1><br>
+    		<h2 class="title2">Take a look at the available free food that is nearing its expiration date near you</h2>
+
+    		<input type="text" id="search_bar" onkeyup="myFunction()" name="search_bar" placeholder="Type the name  of the food ...">
+    	</div>
+    	<!-- Manually made posts as an example (without any registration) -->
+
+	<ul id="myUL">
+		<li><a href="#tomatoes">Red Tomatoes</a></li>
+		<li><a href="#carrots">Fresh Carrots</a></li>
+		<li><a href="#potatoes">Potatoes</a></li>
+		<li><a href="#pears">Pears</a></li>
+		<li><a href="#bread">Bread</a></li>
+		<li><a href="#milk">Milk</a></li>
+		<li><a href="#oranges">Oranges</a></li>
+		<li><a href="#lettuce">Lettuce</a></li>
+		<li><a href="#peaches">Peaches</a></li>
+	</ul>
+
+    	<div class="together">
+    		<div class="box" id="tomatoes">
+    			<div class="image">
+    			  <img class="product" src="https://cdn.hswstatic.com/gif/grocery-tomatoes.jpg">
+    		    </div>
+    			<h3 class="food">Red Tomatoes</h3>
+    			<h4>Freshco</h4>
+    			<h4>Free</h4>
+    			<h5><a href="https://goo.gl/maps/c4bTuWCdsqqdvuLw9" class="loc">Location</h5></a>
+    		</div>
+
+    		<div class="box" id="carrots">
+    			<div class="image">
+    			  <img class="product" src="https://cdn.hswstatic.com/gif/grocery-tomatoes.jpg">
+    		    </div>
+    		    <h3 class="food">Carrots</h3>
+    			<h4>Freshco</h4>
+    			<h4>Free</h4>
+    			<h5><a href="https://goo.gl/maps/c4bTuWCdsqqdvuLw9" class="loc">Location</h5></a>
+    		</div>
+
+    		<div class="box" id="potatoes">
+    			<div class="image">
+    			  <img class="product" src="https://cdn.hswstatic.com/gif/grocery-tomatoes.jpg">
+    		    </div>
+    			<h3 class="food">Potatoes</h3>
+    			<h4>Zehrs</h4>
+    			<h4>$1.00/3 kg</h4>
+    			<a href="https://goo.gl/maps/29ABWwuAKAzpmbFx6"><h5>Location</h5></a>
+    		</div>
+
+    	</div>
+    	<div class="together">
+
+    		<div class="box" id="pears">
+    			<div class="image">
+    			  <img class="product" src="https://cdn.hswstatic.com/gif/grocery-tomatoes.jpg">
+    		    </div>
+    			<h3 class="food">Pears</h3>
+    			<h4>Freshco</h4>
+    			<h4>Free</h4>
+    			<h5><a href="https://goo.gl/maps/c4bTuWCdsqqdvuLw9" class="loc">Location</h5></a>
+    		</div>
+
+    		<div class="box" id="bread">
+    			<div class="image">
+    			  <img class="product" src="https://cdn.hswstatic.com/gif/grocery-tomatoes.jpg">
+    		    </div>
+    			<h3 class="food">Bread</h3>
+    			<h4>Costco</h4>
+    			<h4>Free</h4>
+    			<h5><a href="https://goo.gl/maps/NBCxfHo2bkSsR8jV7">Location</h5></a>
+    		</div>
+
+    		<div class="box" id="milk">
+    			<div class="image">
+    			  <img class="product" src="https://cdn.hswstatic.com/gif/grocery-tomatoes.jpg">
+    		    </div>
+    		    <h3 class="food">Milk</h3>
+    			<h4>Euro Foods</h4>
+    			<h4>Free</h4>
+    			<a href="https://goo.gl/maps/6k7NS8QSN7Zx1zzR6"><h5>Location</h5></a>
+    		</div>
+
+    	</div>
+    	<div class="together">
+
+    		<div class="box" id="oranges">
+    			<div class="image">
+    			  <img class="product" src="https://cdn.hswstatic.com/gif/grocery-tomatoes.jpg">
+    		    </div>
+    			<h3 class="food">Oranges</h3>
+    			<h4>Costco</h4>
+    			<h4>Free</h4>
+    			<h5><a href="https://goo.gl/maps/NBCxfHo2bkSsR8jV7">Location</h5></a>
+    		</div>
+
+    		<div class="box" id="lettuce">
+    			<div class="image">
+    			  <img class="product" src="https://cdn.hswstatic.com/gif/grocery-tomatoes.jpg">
+    		    </div>
+    			<h3 class="food">Lettuce</h3>
+    			<h4>Euro Foods</h4>
+    			<h4>Free</h4>
+    			<a href="https://goo.gl/maps/6k7NS8QSN7Zx1zzR6"><h5>Location</h5></a>
+    		</div>
+
+    		<div class="box" id="peaches">
+    			<div class="image">
+    			  <img class="product" src="https://cdn.hswstatic.com/gif/grocery-tomatoes.jpg">
+    		    </div>
+    			<h3 class="food">Peaches</h3>
+    			<h4>St. Jacob's Market</h4>
+    			<h4>Free</h4>
+    			<a href="https://goo.gl/maps/5Hmw1HKGoZ1C8r9o9"><h5>Location</h5></a>
+    		</div>
+    	</div>
+    	<ul>
+	</div>
+    </section>
+
+    <section id="maps">
+    	<h1 class="container">Check Out How To Get Your Food!</h1>
+    	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41288302.6806295!2d-130.11358188775674!3d50.83045994806638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b0d03d337cc6ad9%3A0x9968b72aa2438fa5!2z0JrQsNC90LDQtNCw!5e0!3m2!1sru!2sua!4v1629540162923!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
     
+    <section id="about">
+    	<h1 class="container">Whats is GreenEats?</h1>
+    </section>
+
+
 </body>
 </html>

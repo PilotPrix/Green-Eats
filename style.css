@@ -1,0 +1,121 @@
+nav {
+	background-color: #86ff86;
+    padding: 2%;
+    position: fixed;
+    width: 96%;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+.menu{
+	font-size: 120%;
+	margin-left: 5%;
+	text-decoration: none;
+	transition: 0.5s;
+	color: black;
+}
+.menu:hover{
+	text-decoration: underline;
+}
+body{
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
+}
+.container{
+	text-align: center;
+}
+#search{
+	background-color: #4aff4a;
+    padding: 15%;
+    /*margin-top: -2%;*/
+    margin-top: 0%;
+}
+#maps{
+	background-color: #4aff4a;
+    padding: 15%;
+    margin-top: -24%;
+}
+#about{
+	background-color: #4aff4a;
+    padding: 15%;
+    margin-top: -24%;
+}
+#search_bar{
+	padding: 1%;
+	width: 52%;
+    border-radius: 33px;
+    border: none;
+}
+h1.title{
+	font-size: 400%;
+    margin-top: -10%;
+}
+.title2{
+	font-size: 205%;
+    margin-top: -4%;
+    margin-bottom: 12%;
+}
+.submit{
+	background-color: green;
+	border: none;
+    border-radius: 100px;
+    padding: 1%;
+    font-size: 105%;
+    transition: 0.5s;
+}
+.submit:hover{
+	background-color: #476532;
+}
+.together {
+	display: flex;
+}
+.box{
+	background-color: white;
+	padding: 1% 7%;
+	width: 15%;
+    margin-top: 6%;
+    margin-left: 3%;
+    text-align: center;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.product {
+	width: 167%;
+    margin-left: -33%;
+}
+.image{
+	padding: 0;
+}
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #88cc7c;
+    margin-top: -1px;
+    background-color: white;
+    padding: 12px;
+    border-radius: 33px;
+    /* border: none; */
+    margin-top: 0.5%;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block;
+    text-align: center;
+    width: 14%;
+    margin-left: 42%;
+    font-size: 80%;
+}
+#myUL li a:hover {
+  background-color:#88cc7c;
+}
+.loc{
+	text-decoration: none;
+}
+iframe{
+	margin-left: 6%;
+    width: 91%;
+    border-radius: 40px;
+}
