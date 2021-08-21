@@ -6,6 +6,16 @@ nav {
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
 }
+html{
+	scroll-behavior: smooth;
+}
+.footer{
+	background-color: #86ff86;
+    padding: 2%;
+    width: 96%;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
 .menu{
 	font-size: 120%;
 	margin-left: 5%;
@@ -118,4 +128,21 @@ iframe{
 	margin-left: 6%;
     width: 91%;
     border-radius: 40px;
+}
+.moving_words{
+	font-size: 800%;
+	color: white;
+	text-align:center;
+
+}
+.slides{
+	background-color: green;
+	width: 143%;
+    padding: 0.1%;
+    margin-left: -22%;
+    font-family: 'Raleway', sans-serif;
+}
+.paragraph{
+	text-align: center;
+	font-size: 122%;
 }

@@ -14,11 +14,19 @@
             li[i].style.display = "none";
         }
     }
-}
+};
 
-function initMap() {
-  const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 8,
-    center: { lat: 35.717, lng: 139.731 },
-  });
-}
+var myIndex = 0;
+wordCarousel();
+
+function wordCarousel() {
+  var i;
+  var x = document.getElementsByClassName("moving_words");
+ for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(wordCarousel, 3000);
+};
