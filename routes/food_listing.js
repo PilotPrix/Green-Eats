@@ -11,7 +11,10 @@ router.post('/', function(req, res) {
   const quantity = req.body["quantity_1"]
   const price = req.body["price_1"]
 
-  res.json({food, quantity, price})
+  const address = req.body["address"]
+  const company = req.body["company"]
+
+  res.json({food, quantity, price, address, company})
 })
 
 module.exports = router;

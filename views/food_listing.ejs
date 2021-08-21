@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="stylesheets/food_listing.css">
 </head>
 <body>
-    <script src="javascripts/food_listing.js"></script>
 
     <header>
         <div class="container">
@@ -33,13 +32,19 @@
         </div>
         <button type="button" onclick="Add()">Add</button>
         <br><br><br>
+
         <label for="location">Pick-up Location</label>
         <input type="text" name="location" required>
+
+        <label for="compnay">Company</label>
+        <input type="text" name="compnay" required>
         <br><br><br>
+        
         <a href="/"><button type="button">Go Back</button></a>
         <button type="submit">Done</button>
     </form>
     
+    <script src="javascripts/food_listing.js"></script>
 
 </body>
 </html>
