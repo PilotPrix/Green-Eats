@@ -20,17 +20,21 @@
 
     <br>
     
-    <div id="Food Adder">
-        <div id="Listing 1" class="Listings">
-            <h3>Food Item 1</h3>
-            <input type="text" name="food item" placeholder="Enter food item (eg. Apples)" required>
-            <input type="number" name="quantity" placeholder="Enter amount" required>
-            <input type="number" name="price" placeholder="Price $$ for each" required>
-            <button type="button" onclick="Delete(1)">Delete</button>
-            <br>
+    <form action="" id="listings-form">
+        <div id="Listings">
+            <div id="Listing 1">
+                <h3>Food Item 1</h3>
+                <input type="text" name="food item" placeholder="Enter food item (eg. Apples)" required>
+                <input type="number" name="quantity" placeholder="Enter amount" required>
+                <input type="number" name="price" placeholder="Price $$ for each" required>
+                <button type="button" onclick="Delete(1)">Delete</button>
+                <br>
+            </div>
         </div>
-    </div>
-    <button type="button" onclick="Add()">Add</button>
+        <button type="button" onclick="Add()">Add</button>
+        <br><br><br>
+        <button type="submit">Done</button>
+    </form>
     
 
 </body>
