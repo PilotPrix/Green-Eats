@@ -5,25 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>List your food items</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="food_listing.css">
 </head>
 <body>
-    <script src="javascript.js"></script>
+    <script src="food_listing.js"></script>
 
-    <h1>Post your food extra food products</h1>
+    <header>
+        <div class="container">
+            <nav>
+                <h2>Post your extra food items</h2>
+            </nav>
+        </div>
+    </header>
+
     <br>
     
     <div id="Food Adder">
-        <div id="Listing">
+        <div id="Listing 1" class="Listings">
             <h3>Food Item 1</h3>
             <input type="text" name="food item" placeholder="Enter food item (eg. Apples)" required>
             <input type="number" name="quantity" placeholder="Enter amount" required>
             <input type="number" name="price" placeholder="Price $$ for each" required>
+            <button type="button" onclick="Delete(1)">Delete</button>
             <br>
         </div>
-        <button type="button" onclick="Add()">Add</button>
     </div>
-
+    <button type="button" onclick="Add()">Add</button>
     
 
 </body>
