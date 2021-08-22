@@ -1,10 +1,11 @@
 let listingsNum = 1
+
 function Add(){
     const listings = document.getElementById("Listings")
     listingsNum += 1
 
     //Add listing after the one before
-    listings.innerHTML += '<div id="Listing ' + listingsNum + '" class="Listings"> <h3>Food Item ' + listingsNum + '</h3> <input type="text" name="food item_' + listingsNum + '" placeholder="Enter food item (eg. Apples)" required> <input type="number" name="quantity_' + listingsNum + '" placeholder="Enter amount" required> <input type="number" name="price_' + listingsNum + '" placeholder="Price $$ for each" required> <button type="button" onclick="Delete(' + listingsNum + ')">Delete</button> <br> </div>'
+    listings.innerHTML += '<div id="Listing_' + listingsNum + '"> <h3>Food Item ' + listingsNum + '</h3> <input type="text" name="food_item_' + listingsNum + '" placeholder="Enter food item (eg. Apples)" required> <input type="number" name="quantity_' + listingsNum + '" placeholder="Enter amount" required> <input type="number" name="price_' + listingsNum + '" placeholder="Price $$ for each" required> <button type="button" onclick="Delete(' + listingsNum + ')">Delete</button> <br> </div>'
 }
 
 function Delete(n){

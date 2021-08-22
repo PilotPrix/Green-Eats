@@ -8,19 +8,29 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/', function(req, res) {
-    const food = req.body["food_item_1"];
-    const quantity = req.body["quantity_1"];
-    const price = req.body["price_1"];
-    const jsonOut = {food,quantity,price};
-    fs.writeFile("jsons/food_listing.json", JSON.stringify({food,quantity,price}), function (err) {
-        if(err) {
-            console.log("Error adding listing");
-            return console.log(err);
-        } else {
-            console.log("Listing added");
-        }
-    });
-    res.render('listing_confirm', { title: 'Express' });
+  let food = []
+  let quantity = []
+  let price = []
+
+  let i = 0
+  
+  while ("food_item_" + (i + 1) in req.body) {
+    console.log(req.body)
+    try{
+      food[i] = req.body["food_item_" + (i + 1)]
+      quantity[i] = req.body["quantity_" + (i + 1)]
+      price[i] = req.body["price_" + (i + 1)]
+    }
+    catch{
+      break
+    }
+    i++;
+  }
+
+  const address = req.body["location"]
+  const company = req.body["company"]
+
+  res.json({food, quantity, price, address, company})
 })
 
 module.exports = router;
