@@ -1,5 +1,5 @@
 
-   function myFunction() {
+function myFunction() {
     var input, filter, ul, li, a, i, txtValue;
     input = document.getElementById("search_bar");
     filter = input.value.toUpperCase();
@@ -30,3 +30,20 @@ function wordCarousel() {
   x[myIndex-1].style.display = "block";
   setTimeout(wordCarousel, 3000);
 };
+
+function clicked() {
+    let x = document.getElementById("testers");
+
+    if (navigator.geolocation) {
+        alert("might");
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+
+    function showPosition(position) {
+    x.innerHTML = "Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude;
+    alert("nice");
+    }
+}
