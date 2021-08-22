@@ -1,1 +1,2 @@
-{"food":"asdf","quantity":"123","price":"123"}
+{"food":["asdf"],"quantity":["123"],"price":["123"],"address":"asdf","company":"asdf"}
+{"food":["asdf"],"quantity":["123"],"price":["123"],"address":"asdf","company":"asdf"}
