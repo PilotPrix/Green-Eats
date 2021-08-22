@@ -26,3 +26,24 @@ function Delete(n){
         listings[i].getElementsByTagName("input")[2].setAttribute("name", "price_" + (i + 1))
     }
 }
+
+function clicked() {
+    let lati = document.getElementById("latitude");
+    let long = document.getElementById("longitude");
+
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else { 
+        alert("Geolocation is not supported by this browser.");
+    }
+
+    function showPosition(position) {
+        alert(position.coords.latitude);
+        alert(position.coords.longitude);
+        document.getElementById("latitude").value = position.coords.latitude;
+        document.getElementById("longitude").value = position.coords.longitude;
+        lati.innerHTML = "Latitude: " + position.coords.latitude + 
+        "<br>Longitude: " + position.coords.longitude;
+        long.innderHTML = position.coords.longitude;
+    }
+}
